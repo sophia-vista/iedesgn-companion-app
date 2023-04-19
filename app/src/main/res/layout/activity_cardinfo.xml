@@ -24,6 +24,31 @@
             tools:layout_editor_absoluteY="0dp">
 
             <TextView
+                android:id="@+id/tv_card_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/gotham_nights_bold"
+                android:text="Asteroid Belt"
+                android:textColor="@color/white"
+                android:textSize="48sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_card_icon_2" />
+
+            <TextView
+                android:id="@+id/tv_card_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gotham_nights"
+                android:text="EVENT CARD"
+                android:textColor="#c134c0"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_card_name"
+                app:layout_constraintStart_toStartOf="@+id/tv_card_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_card_name" />
+
+            <TextView
                 android:id="@+id/tv_card_desc"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -33,7 +58,7 @@
                 android:fontFamily="@font/gotham_nights"
                 android:text="For three (3) rounds, event tiles are inactive, and whenever a player steps on a penalty tile, the player will not draw any penalty card. Instead, the player must roll a six-sided die twice and move counter-clockwise the same number of tiles."
                 android:textAlignment="center"
-                android:textColor="@color/material_dynamic_neutral95"
+                android:textColor="#f0f0f3"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -47,7 +72,7 @@
                 android:fontFamily="@font/gotham_nights"
                 android:text="(Action tiles are inactive during the event.)"
                 android:textAlignment="center"
-                android:textColor="@color/material_dynamic_neutral90"
+                android:textColor="#e1e2e5"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="@+id/tv_card_desc"
                 app:layout_constraintStart_toStartOf="@+id/tv_card_desc"
@@ -68,31 +93,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_card_note"
                 app:srcCompat="@drawable/card_event_asteroidbelt" />
-
-            <TextView
-                android:id="@+id/tv_card_type"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/gotham_nights"
-                android:text="EVENT CARD"
-                android:textColor="#c134c0"
-                android:textSize="24sp"
-                app:layout_constraintEnd_toEndOf="@+id/tv_card_name"
-                app:layout_constraintStart_toStartOf="@+id/tv_card_name"
-                app:layout_constraintTop_toBottomOf="@+id/tv_card_name" />
-
-            <TextView
-                android:id="@+id/tv_card_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/gotham_nights_bold"
-                android:text="Asteroid Belt"
-                android:textColor="@color/white"
-                android:textSize="48sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/iv_card_icon_2" />
 
             <ImageView
                 android:id="@+id/iv_card_icon_2"
