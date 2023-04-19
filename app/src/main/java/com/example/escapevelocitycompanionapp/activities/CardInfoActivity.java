@@ -58,7 +58,7 @@ public class CardInfoActivity extends AppCompatActivity {
         }
 
         this.ivCardIcon.setImageResource(i.getIntExtra("KEY_ICON", 0));
-        this.tvCardName.setText(i.getStringExtra("KEY_NAME"));gith
+        this.tvCardName.setText(i.getStringExtra("KEY_NAME"));
         this.tvCardDesc.setText(i.getStringExtra("KEY_DESC"));
         this.tvCardNote.setText(i.getStringExtra("KEY_NOTE"));
     }
