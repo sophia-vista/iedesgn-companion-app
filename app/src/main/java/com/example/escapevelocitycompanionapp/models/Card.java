@@ -9,19 +9,26 @@ public class Card {
     private int type;
     private String description;
     private String note;
+    private int icon;
 
-    public Card(String name, int type, String description) {
+    private int card;
+
+    public Card(String name, int type, String description, int icon, int card) {
         this.name = name;
         this.type = type;
         this.description = description;
         this.note = "";
+        this.icon = icon;
+        this.card = card;
     }
 
-    public Card(String name, int type, String description, String note) {
+    public Card(String name, int type, String description, String note, int icon, int card) {
         this.name = name;
         this.type = type;
         this.description = description;
         this.note = note;
+        this.icon = icon;
+        this.card = card;
     }
 
     public String getName() {
@@ -54,5 +61,21 @@ public class Card {
 
     public void setNote(String note) {
         this.note = note;
+    }
+
+    public int getIcon() {
+        return icon;
+    }
+
+    public void setIcon(int icon) {
+        this.icon = icon;
+    }
+
+    public int getCard() {
+        return card;
+    }
+
+    public void setCard(int card) {
+        this.card = card;
     }
 }

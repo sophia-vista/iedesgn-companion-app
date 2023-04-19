@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/boardgame_bg"
+    android:backgroundTint="#8B000000"
+    android:backgroundTintMode="src_atop"
+    android:isScrollContainer="true">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_conversion_absoluteHeight="0dp"
+            tools:layout_conversion_absoluteWidth="427dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:id="@+id/tv_card_desc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/gotham_nights"
+                android:text="For three (3) rounds, event tiles are inactive, and whenever a player steps on a penalty tile, the player will not draw any penalty card. Instead, the player must roll a six-sided die twice and move counter-clockwise the same number of tiles."
+                android:textAlignment="center"
+                android:textColor="@color/material_dynamic_neutral95"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_card_type" />
+
+            <TextView
+                android:id="@+id/tv_card_note"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/gotham_nights"
+                android:text="(Action tiles are inactive during the event.)"
+                android:textAlignment="center"
+                android:textColor="@color/material_dynamic_neutral90"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_card_desc"
+                app:layout_constraintStart_toStartOf="@+id/tv_card_desc"
+                app:layout_constraintTop_toBottomOf="@+id/tv_card_desc" />
+
+            <ImageView
+                android:id="@+id/iv_card"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="32dp"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_card_note"
+                app:srcCompat="@drawable/card_event_asteroidbelt" />
+
+            <TextView
+                android:id="@+id/tv_card_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gotham_nights"
+                android:text="EVENT CARD"
+                android:textColor="#c134c0"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_card_name"
+                app:layout_constraintStart_toStartOf="@+id/tv_card_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_card_name" />
+
+            <TextView
+                android:id="@+id/tv_card_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/gotham_nights_bold"
+                android:text="Asteroid Belt"
+                android:textColor="@color/white"
+                android:textSize="48sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_card_icon_2" />
+
+            <ImageView
+                android:id="@+id/iv_card_icon_2"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/img_event_asteroidbelt" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
